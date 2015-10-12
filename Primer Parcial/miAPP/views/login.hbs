@@ -1,0 +1,31 @@
+<h1>Formulario Login</h1>
+<form class="" action="/login" method="post" id="form1">
+  <label for="txtUsuario">Usuario</label>
+  <input type="text" name="txtUsuario" value="{{txtUsuario}}">
+  <br>
+  <label for="txtPass">Contraseña</label>
+  <input type="text" name="txtPass" value="">
+  <br>
+  <!-- onclick ejecuta la funcion de JS que escribo abajo-->
+  <button onClick="enviarForm()" name="btnSignIn">Iniciar Sesión</button>
+
+</form>
+<script type="text/javascript">
+function enviarForm(){
+  var form = document.getElementById('form1');
+  form.submit();
+}
+
+</script>
+<div class="">
+  <ul>
+  <!-- PARA LEER ARREGLOS EN HANDELBARS-->
+  {{#each errors}}
+  <li>
+      {{this}}
+  </li>
+  {{/each}}
+
+  </ul>
+
+</div>

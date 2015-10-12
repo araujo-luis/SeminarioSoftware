@@ -1,0 +1,31 @@
+modulo forever para que no se necesite reiniciar el
+servido node cada vez que se hace un cambio
+
+todos los paquetes instalados en NODEJS
+npm list -g
+
+para ver el forever
+npm list -g | grep forever
+
+INSTALACION , la g es global
+npm install forever -g
+
+y para ver que esta instalao
+npm list -g | grep forever
+
+y cheque
+ahora para iniciar el servidor
+le digo que ejecute el archivo ./bin/www
+asi: el -w significa que monitoree los archivos, y cuando hay cambios lo reinicia
+
+
+
+forever start ./bin/www -w
+
+para ver lo qe pasa escribo:
+
+forever list
+
+y copio la ruta y lo puedo ver con un more o tail
+
+tail -f /home/ruta/archivo.log

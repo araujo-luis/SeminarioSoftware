@@ -1,0 +1,47 @@
+<title>{{title}}</title>
+{{!Comentario de HandelBars}}
+
+<!--Otro comentadio -->
+
+
+{{#each document}}
+<p>
+  hola
+
+  {{.}}
+</p>
+{{/each}}
+
+
+<form action="form" method="post">
+  <label for="txtNombre">Nombre</label>
+  <input type="text" name="txtNombre" id="txtNombre" value="{{txtNombre}}">
+  <br>
+  <label for="txtApellido">Apellido</label>
+  <input type="text" name="txtApellido" id="txtApellido" value="{{txtApellido}}">
+  <br>
+  <label for="txtTelefono">Telefono</label>
+  <input type="text" name="txtTelefono" id="txtTelefono" value="{{txtTelefono}}">
+  <br>
+  <label for="txtEmail">Email</label>
+  <input type="text" name="txtEmail" id="txtEmail" value="{{txtEmail}}">
+  <br>
+  <input type="submit" name="btnSubmit" value="Enviar">
+</form>
+
+{{#if errores}}
+  <ul>
+    {{#each errores}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+{{/if}}
+
+
+{{#if otro}}
+  <ul>
+    {{#each otro}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+{{/if}}

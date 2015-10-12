@@ -1,0 +1,13 @@
+{
+  "uploadOnSave": true,
+  "hostname": "172.16.100.131",
+  "port": "22",
+  "target": "/home/administrador/miApp",
+  "ignore": [
+    ".git/**",
+    "node_modules/**"
+  ],
+  "username": "administrador",
+  "password": "devicc",
+  "transport": "scp"
+}

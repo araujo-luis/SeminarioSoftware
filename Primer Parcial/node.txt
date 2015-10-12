@@ -1,0 +1,56 @@
+
+IP NODE VMware
+172.16.100.131
+
+en la maquina fisica
+ssh administrador@IP
+
+
+CREAR PROYECTO:
+para ver la version del node
+node -v
+
+y la version del npm
+npm -v
+
+ya esta instalado el express-generator
+entonces
+
+express --git --css less --hbs NombreAPP
+
+ahora ingresamos a la carpeta creada e instalar e iniciar
+npm install
+npm start
+
+
+
+2.SINCRONIZAR LA MAQUINA FISICA CON LA MAQUINA VIRTUAL
+
+CREAMOS UNA CARPETA EN LA MAQUINA FISICA
+con su README.md dentro
+
+abrimos el atom desde el directorio del readme
+e instalamos el paquete de atom remotesync
+para que sincronice, esto se hace por proyecto
+
+luego presionamos control+shift+p
+y escribimos remote
+hostnane ponemos la IP
+puerto 22
+
+target directory: la direccion de la carpeta que esta en la maquina virtual
+en ignore path escribimos .git/**, node_modules
+
+
+en username ponemos el usuario de la VM que es administrador
+y clic a la pestaña password
+ password la contraseña del usuario
+
+y chequea,ps uploadONSave
+
+para ver si funciona 
+boton secundario en el folder en el panel izquerdo 
+REmote Sync y luego download folder
+
+
+
